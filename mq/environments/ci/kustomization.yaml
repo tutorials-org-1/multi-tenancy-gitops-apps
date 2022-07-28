@@ -5,7 +5,7 @@ resources:
 - eventlisteners/cntk-event-listener.yaml
 - triggerbindings/cntk-binding.yaml
 - triggertemplates/mq-qm-dev.yaml
-#- triggertemplates/mq-spring-app-dev.yaml
+- triggertemplates/mq-spring-app-dev.yaml
 #- pipelines/mq-metric-samples-dev-pipeline.yaml
 - pipelines/ibm-test-pipeline-for-dev.yaml
 - pipelines/ibm-test-pipeline-for-stage.yaml
