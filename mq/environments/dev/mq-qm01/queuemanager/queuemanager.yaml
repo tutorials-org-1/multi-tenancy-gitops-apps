@@ -39,7 +39,7 @@ spec:
     resources:
       limits:
         cpu: "1"
-        memory: 1Gi
+        memory: 2Gi
       requests:
         cpu: "1"
         memory: 1Gi
@@ -47,7 +47,7 @@ spec:
     availability:
       type: SingleInstance
 
-    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm01:0.0.1"
+    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm01:0.0.2"
     imagePullPolicy: Always
 
     storage:
