@@ -6,7 +6,7 @@ resources:
 - triggerbindings/cntk-binding.yaml
 - triggertemplates/mq-qm-dev.yaml
 - triggertemplates/mq-spring-app-dev.yaml
-#- pipelines/mq-metric-samples-dev-pipeline.yaml
+- pipelines/mq-metric-samples-dev-pipeline.yaml
 - pipelines/ibm-test-pipeline-for-dev.yaml
 - pipelines/ibm-test-pipeline-for-stage.yaml
 #- pipelines/java-maven-dev-pipeline.yaml
@@ -19,7 +19,7 @@ resources:
 - roles/custom-staging-pipeline-sa-rolebinding.yaml
 - roles/custom-prod-pipeline-sa-rolebinding.yaml
 - routes/cntk-route.yaml
-#- secrets/artifactory-access-secret.yaml
+- secrets/artifactory-access-secret.yaml
 - secrets/git-credentials-secret.yaml
 - secrets/ibm-entitled-registry-credentials-secret.yaml
 #- secrets/mq-client-jks-password-secret.yaml
@@ -39,7 +39,7 @@ resources:
 - tasks/ibm-java-maven-test-v2-6-13.yaml
 - tasks/ibm-setup-v2-6-13.yaml
 - tasks/ibm-tag-release-v2-6-13.yaml
-#- tasks/mq-metrics-build-tag-push.yaml
+- tasks/mq-metrics-build-tag-push.yaml
 
 # Automated promotion process triggers
 
