@@ -6,18 +6,4 @@ metadata:
     argocd.argoproj.io/sync-wave: "300"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-spec:
-  destination:
-    namespace: dev
-    server: https://kubernetes.default.svc
-  project: applications
-  source:
-    path: mq/environments/dev/mq-qm01/
-    repoURL: https://github.com/tutorials-org-1/multi-tenancy-gitops-apps.git
-    targetRevision: master
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - Replace=true
+spec: {}
