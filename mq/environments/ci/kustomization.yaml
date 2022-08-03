@@ -6,12 +6,12 @@ resources:
 - triggerbindings/cntk-binding.yaml
 - triggertemplates/mq-qm-dev.yaml
 - triggertemplates/mq-spring-app-dev.yaml
-# - pipelines/mq-metric-samples-dev-pipeline.yaml
-# - pipelines/ibm-test-pipeline-for-dev.yaml
-# - pipelines/ibm-test-pipeline-for-stage.yaml
-# #- pipelines/java-maven-dev-pipeline.yaml
-# - pipelines/mq-pipeline-dev.yaml
-# - pipelines/mq-spring-app-dev-pipeline.yaml
+- pipelines/mq-metric-samples-dev-pipeline.yaml
+- pipelines/ibm-test-pipeline-for-dev.yaml
+- pipelines/ibm-test-pipeline-for-stage.yaml
+#- pipelines/java-maven-dev-pipeline.yaml
+- pipelines/mq-pipeline-dev.yaml
+- pipelines/mq-spring-app-dev-pipeline.yaml
 - roles/custom-pipeline-sa-clusterrole.yaml
 - roles/custom-pipeline-sa-role.yaml
 - roles/custom-ci-pipeline-sa-rolebinding.yaml
