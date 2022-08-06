@@ -25,3 +25,4 @@ spec:
     name: mq-spring-app-dev
     template:
       ref: mq-spring-app-dev
+      
