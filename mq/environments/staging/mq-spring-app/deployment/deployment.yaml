@@ -30,7 +30,7 @@ spec:
       volumes:
       containers:
         - name: mq-spring-app
-          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-spring-app:0.0.1"
+          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-spring-app:0.0.2"
           imagePullPolicy: IfNotPresent
           volumeMounts:
           ports:
