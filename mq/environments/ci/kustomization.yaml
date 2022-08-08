@@ -43,18 +43,18 @@ resources:
 
 # Automated promotion process triggers
 
-# - triggertemplates/mq-qm-dev-triggertemplate.yaml
-# - eventlisteners/mq-qm-dev-eventlistener.yaml
-# - routes/mq-qm-dev-route.yaml
-#
-# - triggertemplates/mq-spring-app-dev-triggertemplate.yaml
-# - eventlisteners/mq-spring-app-dev-eventlistener.yaml
-# - routes/mq-spring-app-dev-route.yaml
-#
-# - triggertemplates/mq-qm-stage-triggertemplate.yaml
-# - eventlisteners/mq-qm-stage-eventlistener.yaml
-# - routes/mq-qm-stage-route.yaml
-#
-# - triggertemplates/mq-spring-app-stage-triggertemplate.yaml
-# - eventlisteners/mq-spring-app-stage-eventlistener.yaml
-# - routes/mq-spring-app-stage-route.yaml
+- triggertemplates/mq-qm-dev-triggertemplate.yaml
+- eventlisteners/mq-qm-dev-eventlistener.yaml
+- routes/mq-qm-dev-route.yaml
+
+- triggertemplates/mq-spring-app-dev-triggertemplate.yaml
+- eventlisteners/mq-spring-app-dev-eventlistener.yaml
+- routes/mq-spring-app-dev-route.yaml
+
+- triggertemplates/mq-qm-stage-triggertemplate.yaml
+- eventlisteners/mq-qm-stage-eventlistener.yaml
+- routes/mq-qm-stage-route.yaml
+
+- triggertemplates/mq-spring-app-stage-triggertemplate.yaml
+- eventlisteners/mq-spring-app-stage-eventlistener.yaml
+- routes/mq-spring-app-stage-route.yaml
