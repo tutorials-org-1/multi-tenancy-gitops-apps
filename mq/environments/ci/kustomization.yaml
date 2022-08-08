@@ -12,6 +12,7 @@ resources:
 #- pipelines/java-maven-dev-pipeline.yaml
 - pipelines/mq-pipeline-dev.yaml
 - pipelines/mq-spring-app-dev-pipeline.yaml
+- pipelines/mq-quarkus-app-dev-pipeline.yaml
 - roles/custom-pipeline-sa-clusterrole.yaml
 - roles/custom-pipeline-sa-role.yaml
 - roles/custom-ci-pipeline-sa-rolebinding.yaml
