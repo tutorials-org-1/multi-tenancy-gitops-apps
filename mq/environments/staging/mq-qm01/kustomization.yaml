@@ -1,6 +1,6 @@
 resources:
  - ../../base/mq-qm01
- # - queuemanager/hooks/post-sync-job.yaml
+ - queuemanager/hooks/post-sync-job.yaml
  # - certificates/staging-mq-client-certificate.yaml
  # - certificates/staging-mq-server-certificate.yaml
  # - secrets/mq-client-jks-password-secret.yaml
