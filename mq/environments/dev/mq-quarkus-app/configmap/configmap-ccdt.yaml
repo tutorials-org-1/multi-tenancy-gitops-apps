@@ -1,9 +1,9 @@
 ---
-# Source: mq-spring-app/templates/configmap-ccdt.yaml
+# Source: mq-quarkus-app/templates/configmap-ccdt.yaml
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: mq-spring-app-ccdt
+  name: mq-quarkus-app-ccdt
 data:
   ccdt.json: |
     {
