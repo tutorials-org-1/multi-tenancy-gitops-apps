@@ -1,0 +1,20 @@
+---
+# Source: mq-quarkus-app/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: mq-quarkus-app
+  labels:
+    app.kubernetes.io/name: mq-quarkus-app
+    app.kubernetes.io/instance: mq-quarkus-app
+    app: mq-quarkus-app
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: mq-quarkus-app
+    app.kubernetes.io/instance: mq-quarkus-app

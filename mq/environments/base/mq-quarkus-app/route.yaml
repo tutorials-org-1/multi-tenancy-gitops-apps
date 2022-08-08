@@ -1,0 +1,16 @@
+---
+# Source: mq-quarkus-app/templates/route.yaml
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: mq-quarkus-app
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=false
+spec:
+  to:
+    kind: Service
+    name: mq-quarkus-app
+    weight: 100
+  tls:
+    termination: edge
+  wildcardPolicy: None
