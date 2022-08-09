@@ -21,9 +21,9 @@ spec:
           - start
           - ibm-mq-promote-dev-stage
           - --param
-          - git-url=https://github.com/tutorials-org-1/mq-spring-app.git
+          - git-url=https://github.com/tutorials-org-1/mq-quarkus-app.git
           - --param
-          - git-revision=mq-spring-tutorials-org-1
+          - git-revision=mq-quarkus-tutorials-org-1
           - --param
           - src-environment=dev
           - --param
@@ -33,6 +33,6 @@ spec:
           - --param
           - git-pr=true
           - --param
-          - test-file="postman/mq-spring-app.postman_collection.json"
+          - test-file="postman/mq-quarkus-app.postman_collection.json"
       restartPolicy: Never
   backoffLimit: 0
