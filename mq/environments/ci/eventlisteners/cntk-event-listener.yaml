@@ -43,3 +43,21 @@ spec:
     name: mq-spring-app-dev
     template:
       ref: mq-spring-app-dev
+  - bindings:
+    - kind: TriggerBinding
+      ref: cnkt-trigger-binding
+    interceptors:
+      - params:
+          - name: filter
+            value: >-
+              header.match('X-GitHub-Event', 'push') && body.ref ==
+              'refs/heads/mq-quarkus-tutorials-org-1' &&
+              body.repository.full_name == 'tutorials-org-1/mq-quarkus-app'
+          - name: overlays
+            value: null
+        ref:
+          kind: ClusterInterceptor
+          name: cel
+    name: mq-quarkus-app-dev
+    template:
+      ref: mq-quarkus-app-dev
