@@ -30,7 +30,7 @@ spec:
       volumes:
       containers:
         - name: mq-quarkus-app
-          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-app:0.0.4"
+          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-app:0.0.1"
           imagePullPolicy: IfNotPresent
           volumeMounts:
           ports:

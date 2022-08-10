@@ -10,3 +10,5 @@ data:
   QM: QM1
   QUEUE_NAME: IBM.DEMO.Q
   APP_NAME: MQ-QUARKUS-APP
+  PORT: "1414"
+  HOST: qm1-ibm-mq.dev.svc.cluster.local
