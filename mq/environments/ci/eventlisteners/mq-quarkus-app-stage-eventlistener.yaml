@@ -1,0 +1,10 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: mq-quarkus-app-post-stage
+spec:
+  serviceAccountName: pipeline
+  triggers:
+    - name: mq-quarkus-app-post-stage
+      template:
+        ref: mq-quarkus-app-post-stage

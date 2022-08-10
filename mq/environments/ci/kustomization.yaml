@@ -53,6 +53,10 @@ resources:
 - eventlisteners/mq-spring-app-dev-eventlistener.yaml
 - routes/mq-spring-app-dev-route.yaml
 
+- triggertemplates/mq-quarkus-app-dev-triggertemplate.yaml
+- eventlisteners/mq-quarkus-app-dev-eventlistener.yaml
+- routes/mq-quarkus-app-dev-route.yaml
+
 - triggertemplates/mq-qm-stage-triggertemplate.yaml
 - eventlisteners/mq-qm-stage-eventlistener.yaml
 - routes/mq-qm-stage-route.yaml
@@ -60,3 +64,7 @@ resources:
 - triggertemplates/mq-spring-app-stage-triggertemplate.yaml
 - eventlisteners/mq-spring-app-stage-eventlistener.yaml
 - routes/mq-spring-app-stage-route.yaml
+
+- triggertemplates/mq-quarkus-app-stage-triggertemplate.yaml
+- eventlisteners/mq-quarkus-app-stage-eventlistener.yaml
+- routes/mq-quarkus-app-stage-route.yaml
