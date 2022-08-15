@@ -25,7 +25,7 @@ resources:
 - secrets/git-credentials-secret.yaml
 - secrets/ibm-entitled-registry-credentials-secret.yaml
 #- secrets/mq-client-jks-password-secret.yaml
-#- secrets/mq-tls-secret.yaml
+- secrets/mq-tls-secret.yaml
 - tasks/10-gitops.yaml
 - tasks/10-gitops-for-mq.yaml
 - tasks/10-gitops-promotion.yaml
