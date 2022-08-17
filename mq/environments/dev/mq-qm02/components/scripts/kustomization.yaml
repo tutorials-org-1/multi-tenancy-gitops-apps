@@ -6,7 +6,7 @@ generatorOptions:
 
 # Create a configMap that holds scripts for the queue manager service.
 configMapGenerator:
-- name: scripts-configmap
+- name: scripts-configmap2
   behavior: create
   files:
   - start-mqsc.sh
