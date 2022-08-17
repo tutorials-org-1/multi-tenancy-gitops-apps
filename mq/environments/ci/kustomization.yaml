@@ -5,6 +5,7 @@ resources:
 - eventlisteners/cntk-event-listener.yaml
 - triggerbindings/cntk-binding.yaml
 - triggertemplates/mq-qm-dev.yaml
+- triggertemplates/mq-qm2-dev.yaml
 - triggertemplates/mq-spring-app-dev.yaml
 - triggertemplates/mq-quarkus-app-dev.yaml
 - pipelines/mq-metric-samples-dev-pipeline.yaml
@@ -12,6 +13,7 @@ resources:
 - pipelines/ibm-test-pipeline-for-stage.yaml
 #- pipelines/java-maven-dev-pipeline.yaml
 - pipelines/mq-pipeline-dev.yaml
+- pipelines/mq2-pipeline-dev.yaml
 - pipelines/mq-spring-app-dev-pipeline.yaml
 - pipelines/mq-quarkus-app-dev-pipeline.yaml
 - roles/custom-pipeline-sa-clusterrole.yaml
