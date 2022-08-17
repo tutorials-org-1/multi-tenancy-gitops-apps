@@ -80,7 +80,7 @@ spec:
     keys:
       - name: mqtlssecret
         secret:
-          secretName: mq-tls-secret
+          secretName: mq-tls-secret2
           items: 
           - tls.key
           - tls.crt
