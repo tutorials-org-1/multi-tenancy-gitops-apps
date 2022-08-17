@@ -47,7 +47,7 @@ spec:
     availability:
       type: SingleInstance
 
-    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm01:0.0.14"
+    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm02:0.0.1"
     imagePullPolicy: Always
 
     storage:
@@ -80,7 +80,7 @@ spec:
     keys:
       - name: mqtlssecret
         secret:
-          secretName: mq-tls-secret2
+          secretName: mq-tls-secret
           items: 
           - tls.key
           - tls.crt
