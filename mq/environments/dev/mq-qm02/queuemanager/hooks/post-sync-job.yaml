@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: trigger-dev-stage-promotion-pipeline-for-qmgr
+  name: trigger-dev-stage-promotion-pipeline-for-qmgr2
   namespace: ci
   annotations:
     argocd.argoproj.io/hook: PostSync
