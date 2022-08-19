@@ -1,0 +1,14 @@
+---
+# Source: mq-quarkus-tls-app/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mq-quarkus-tls-app
+data:
+  CHANNEL: MQTLSCHL
+  CONNECTION_NAME: qm2-ibm-mq.dev.svc.cluster.local(1414)
+  QM: QM2
+  QUEUE_NAME: TLS.QUEUE
+  APP_NAME: MQ-QUARKUS-TLS-APP
+  PORT: "1414"
+  HOST: qm1-ibm-mq.dev.svc.cluster.local

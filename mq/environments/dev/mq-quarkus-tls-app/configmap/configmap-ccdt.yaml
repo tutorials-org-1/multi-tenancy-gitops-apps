@@ -1,0 +1,25 @@
+---
+# Source: mq-quarkus-tls-app/templates/configmap-ccdt.yaml
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mq-quarkus-tls-app-ccdt
+data:
+  ccdt.json: |
+    {
+      "channel": [
+        {
+          "name": "IBM.APP.SVRCONN",
+          "clientConnection": {
+            "connection": [
+              {
+                "host": "qm2-dev-ibm-mq.dev.svc.cluster.local",
+                "port": 1414
+              }
+            ],
+            "queueManager": "QM1"
+          },
+          "type": "clientConnection"
+        }
+      ]
+    }
