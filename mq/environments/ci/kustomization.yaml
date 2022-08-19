@@ -7,7 +7,7 @@ resources:
 - triggertemplates/mq-qm-dev.yaml
 - triggertemplates/mq-qm2-dev.yaml
 - triggertemplates/mq-spring-app-dev.yaml
-- triggertemplates/mq-quarkus-app-dev.
+- triggertemplates/mq-quarkus-app-dev.yaml
 - triggertemplates/mq-quarkus-tls-app-dev.yaml
 - pipelines/mq-metric-samples-dev-pipeline.yaml
 - pipelines/ibm-test-pipeline-for-dev.yaml
