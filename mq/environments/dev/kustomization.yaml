@@ -3,3 +3,4 @@ resources:
   - mq-metric-samples
   - mq-spring-app
   - mq-quarkus-app
+  - mq-quarkus-tls-app
