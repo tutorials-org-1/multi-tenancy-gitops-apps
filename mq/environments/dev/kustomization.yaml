@@ -1,5 +1,6 @@
 resources:
   - mq-qm01
+  - mq-qm02
   - mq-metric-samples
   - mq-spring-app
   - mq-quarkus-app
