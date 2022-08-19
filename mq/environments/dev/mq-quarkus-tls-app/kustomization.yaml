@@ -1,5 +1,5 @@
 resources:
- - ../../base/mq-quarkus-app
+ - ../../base/mq-quarkus-tls-app
  - configmap/configmap.yaml
  - configmap/configmap-ccdt.yaml
  - deployment/hooks/post-sync-job.yaml

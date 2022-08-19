@@ -11,4 +11,4 @@ data:
   QUEUE_NAME: TLS.QUEUE
   APP_NAME: MQ-QUARKUS-TLS-APP
   PORT: "1414"
-  HOST: qm1-ibm-mq.dev.svc.cluster.local
+  HOST: qm2-ibm-mq.dev.svc.cluster.local
