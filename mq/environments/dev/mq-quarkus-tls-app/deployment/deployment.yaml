@@ -33,7 +33,7 @@ spec:
             secretName: ibm-jks
       containers:
         - name: mq-quarkus-tls-app
-          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-tls-app:0.0.2"
+          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-tls-app:0.0.3"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: jks-secret-volume
@@ -112,8 +112,5 @@ spec:
             - secretRef:
                 name: jaeger-access
                 optional: true
-          mounts:
-            /certs from certs (rw)
           resources:
             null
-            
