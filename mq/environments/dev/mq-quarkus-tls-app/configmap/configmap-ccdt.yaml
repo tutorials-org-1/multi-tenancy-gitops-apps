@@ -1,5 +1,5 @@
 ---
-# Source: mq-quarkus-tls-app/templates/configmap-ccdt.yaml
+# Source: mq-quarkus-app/templates/configmap-ccdt.yaml
 kind: ConfigMap
 apiVersion: v1
 metadata:
@@ -9,7 +9,7 @@ data:
     {
       "channel": [
         {
-          "name": "IBM.APP.SVRCONN",
+          "name": "MQTLSCHL",
           "clientConnection": {
             "connection": [
               {
@@ -17,7 +17,7 @@ data:
                 "port": 1414
               }
             ],
-            "queueManager": "QM1"
+            "queueManager": "QM2"
           },
           "type": "clientConnection"
         }

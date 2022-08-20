@@ -28,11 +28,17 @@ spec:
     spec:
       serviceAccountName: mq-quarkus-tls-app
       volumes:
+        - name: jks-secret-volume
+          secret:
+            secretName: ibm-jks
       containers:
         - name: mq-quarkus-tls-app
           image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-tls-app:0.0.1"
           imagePullPolicy: IfNotPresent
           volumeMounts:
+            - name: jks-secret-volume
+              mountPath: /certs
+              readOnly: true
           ports:
             - name: http
               containerPort: 8080
@@ -82,6 +88,11 @@ spec:
                 configMapKeyRef:
                   key: QUEUE_NAME
                   name: mq-quarkus-tls-app
+            - name: APP_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: APP_NAME
+                  name: mq-quarkus-tls-app
             - name: HOST
               valueFrom:
                 configMapKeyRef:
@@ -92,19 +103,16 @@ spec:
                 configMapKeyRef:
                   key: PORT
                   name: mq-quarkus-tls-app
-            - name: APP_NAME
-              valueFrom:
-                configMapKeyRef:
-                  key: APP_NAME
-                  name: mq-quarkus-tls-app
             - name: OPENTRACING_JAEGER_ENABLED
               value: "false"
           envFrom:
             - configMapRef:
-                name: jaeger-config
+                name: jaeger-quarkus-tls-config
                 optional: true
             - secretRef:
                 name: jaeger-access
                 optional: true
+          mounts:
+            /certs from certs (rw)
           resources:
             null
