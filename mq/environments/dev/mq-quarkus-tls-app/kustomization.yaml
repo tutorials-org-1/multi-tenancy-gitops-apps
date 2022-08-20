@@ -3,6 +3,7 @@ resources:
  - configmap/configmap.yaml
  - configmap/configmap-ccdt.yaml
  - deployment/hooks/post-sync-job.yaml
+ - secrets/ibm-jks.yaml
  # - certificates/dev-mq-client-certificate.yaml
  # - certificates/dev-mq-server-certificate.yaml
  # - secrets/mq-client-jks-password-secret.yaml
