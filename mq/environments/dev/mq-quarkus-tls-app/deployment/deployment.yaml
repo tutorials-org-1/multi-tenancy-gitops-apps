@@ -33,7 +33,7 @@ spec:
             secretName: ibm-jks
       containers:
         - name: mq-quarkus-tls-app
-          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-tls-app:0.0.1"
+          image: "image-registry.openshift-image-registry.svc:5000/ci/mq-quarkus-tls-app:0.0.2"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: jks-secret-volume
