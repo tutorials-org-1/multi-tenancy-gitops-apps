@@ -47,7 +47,7 @@ spec:
     availability:
       type: SingleInstance
 
-    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm02:0.0.16"
+    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm02:0.0.17"
     imagePullPolicy: Always
 
     storage:
@@ -64,6 +64,9 @@ spec:
     pod:
       containers:
       - name: qmgr
+        env:
+        - name: DEBUG
+          value: "true"
   terminationGracePeriodSeconds: 30
   tracing:
     agent: {}
