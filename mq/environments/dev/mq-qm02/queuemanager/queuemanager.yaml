@@ -47,7 +47,7 @@ spec:
     availability:
       type: SingleInstance
 
-    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm02:0.0.18"
+    image: "image-registry.openshift-image-registry.svc:5000/ci/mq-qm02:0.0.19"
     imagePullPolicy: Always
 
     storage:
