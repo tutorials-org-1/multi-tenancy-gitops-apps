@@ -41,7 +41,7 @@ LDAPUSER('cn=admin,dc=local,dc=io') LDAPPWD('admin') +
 SECCOMM(NO) +
 USRFIELD('uid') +
 SHORTUSR('uid') +
-BASEDNU('ou=people,dc=ibm,dc=com') +
+BASEDNU('ou=people,dc=local,dc=io') +
 AUTHORMD(SEARCHGRP) +
 BASEDNG('ou=groups,dc=ibm,dc=com') +
 GRPFIELD('cn') +
