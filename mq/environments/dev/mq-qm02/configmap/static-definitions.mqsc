@@ -37,7 +37,7 @@ SET CHLAUTH(QMLDAP_SVRCONN) TYPE(BLOCKUSER) ACTION(REPLACE) USERLIST('nobody')
 DEFINE AUTHINFO(USE.LDAP) +
 AUTHTYPE(IDPWLDAP) +
 CONNAME('openldap.openldap(389)') +
-LDAPUSER('cn=admin,dc=ibm,dc=com') LDAPPWD('admin') +
+LDAPUSER('cn=admin,dc=local,dc=io') LDAPPWD('admin') +
 SECCOMM(NO) +
 USRFIELD('uid') +
 SHORTUSR('uid') +
