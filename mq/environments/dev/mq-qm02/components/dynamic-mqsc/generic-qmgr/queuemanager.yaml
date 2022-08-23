@@ -15,12 +15,10 @@ spec:
             defaultMode: 0777
         - name: dynamic-config-volume-mqsc
           configMap:
-            name: dynamic-mqsc-configmap
+            name: dynamic-mqsc-configmap2
             defaultMode: 0777
       containers:
         - env:
-            - name: MQSNOAUT
-              value: 'yes'
           name: qmgr
           volumeMounts:
           - name: config-volume-scripts
